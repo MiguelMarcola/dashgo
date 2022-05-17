@@ -8,7 +8,6 @@ export function Pagination() {
                 <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
             </Box>
             <Stack direction="row" spacing="2">
-
                 <PaginationItem numberPage={1} isCurrent />
                 <PaginationItem numberPage={2} />
                 <PaginationItem numberPage={3} />
