@@ -37,7 +37,7 @@ export function Pagination({
     return (
         <Stack direction={["column", "row"]} mt="8" justify="space-between" align="center" spacing="6">
             <Box>
-                <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
+                <strong>{currentPage === 1 ? 1 : currentPage * 10}</strong> - <strong>{currentPage === 1 ? registersPerPage : currentPage === lastPage ? totalCountOfRegisters : currentPage * 10 + registersPerPage}</strong> de <strong> {totalCountOfRegisters} </strong>
             </Box>
             <Stack direction="row" spacing="2">
 
